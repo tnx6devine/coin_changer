@@ -30,4 +30,12 @@ end
 def test_assert_that_23_cents_equals_2_dime_3_penny
 	assert_equal({"dime" => 2, "penny" => 3}, get_change(23))
 end
+
+def test_assert_that_87_cents_equals_3_quarter_1_dime_2_penny
+	assert_equal({"quarter" => 3, "dime" => 1, "penny" => 2}, get_change(87))
+end
+
+def test_assert_that_223_cents_equals_2_dime_3_penny
+	assert_equal({"dollar" => 2, "dime" => 2, "penny" => 3}, get_change(223))
+end
 end
